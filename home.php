@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 include 'config.php';
 
@@ -28,7 +28,7 @@ if(isset($_POST['add_to_cart'])){
 
 }
 
-?>  
+?>   
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,18 +65,18 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="box-container">
 
-      <!-- <?php  
+      <?php  
          $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 6") or die('query failed');
          if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
-      ?> -->
+      ?>
      <form action="" method="post" class="box">
       <img class="image" src="images/bash_and_lucy-2.jpg" alt="">
       <div class="name">
-         <!-- <?php echo $fetch_products['name']; ?>-->
+         <?php echo $fetch_products['name']; ?>
          </div> 
       <div class="price">
-         <!-- $<?php echo $fetch_products['price']; ?> -->
+         $<?php echo $fetch_products['price']; ?>
         RS. /-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -87,10 +87,10 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="images/bash_and_lucy-2.jpg" alt="">
       <div class="name">
-         <!-- <?php echo $fetch_products['name']; ?>-->
+         <?php echo $fetch_products['name']; ?>
          </div> 
       <div class="price">
-         <!-- $<?php echo $fetch_products['price']; ?> -->
+         $<?php echo $fetch_products['price']; ?>
         RS. /-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -101,10 +101,10 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="images/holy_ghosts.jpg" alt="">
       <div class="name">
-         <!-- <?php echo $fetch_products['name']; ?>-->
+         <?php echo $fetch_products['name']; ?>
          </div> 
       <div class="price">
-         <!-- $<?php echo $fetch_products['price']; ?> -->
+         $<?php echo $fetch_products['price']; ?>
         RS. /-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -115,10 +115,10 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="images/clever_lands.jpg" alt="">
       <div class="name">
-         <!-- <?php echo $fetch_products['name']; ?>-->
+         <?php echo $fetch_products['name']; ?>
          </div> 
       <div class="price">
-         <!-- $<?php echo $fetch_products['price']; ?> -->
+         $<?php echo $fetch_products['price']; ?>
         RS. /-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -129,10 +129,10 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="images/bash_and_lucy-2.jpg" alt="">
       <div class="name">
-         <!-- <?php echo $fetch_products['name']; ?>-->
+         <?php echo $fetch_products['name']; ?>
          </div> 
       <div class="price">
-         <!-- $<?php echo $fetch_products['price']; ?> -->
+         $<?php echo $fetch_products['price']; ?>
         RS. /-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -143,10 +143,10 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="images/bash_and_lucy-2.jpg" alt="">
       <div class="name">
-         <!-- <?php echo $fetch_products['name']; ?>-->
+         <?php echo $fetch_products['name']; ?>
          </div> 
       <div class="price">
-         <!-- $<?php echo $fetch_products['price']; ?> -->
+         $<?php echo $fetch_products['price']; ?>
         RS. /-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
@@ -154,12 +154,12 @@ if(isset($_POST['add_to_cart'])){
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
       <input type="submit" value="add to cart" name="add_to_cart" class="btn">
      </form>
-      <!-- <?php
+      <?php
          }
       }else{
          echo '<p class="empty">no products added yet!</p>';
       }
-      ?> -->
+      ?>
    </div>
 
    <div class="load-more" style="margin-top: 2rem; text-align:center">
